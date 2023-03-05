@@ -16,7 +16,7 @@ function App() {
         {(isAuth) ? 
         <Routes>
           <Route path="*" element={<Navigate to="/menu" />} />
-          <Route path="/" element={(balance < deposit * 0.05 || balance > deposit * 2) ? <FinalWindow /> : <Main />}>
+          <Route path="/" element={(balance <= deposit * 0.05 || balance > deposit * 2) ? <FinalWindow /> : <Main />}>
             <Route path="menu" element={ <MenuGames /> }/>
             <Route path="flipCoin" element={ <FlipCoin /> }/>
             <Route path="guessDoor" element={ <GuessDoor /> }/>
