@@ -3,36 +3,11 @@ import { createSlice } from '@reduxjs/toolkit';
 const userSlice = createSlice({
   name: 'user',
   initialState: {
-      isAuth: true,
-      deposit: 200,
-      name: "Artur",
-      balance: 100,
-      gameHistory: [
-        {
-          game: "Flip Coin",
-          result: "-100",
-        },
-        {
-          game: "Guess Door",
-          result: "-100",
-        },
-        {
-          game: "Flip Coin",
-          result: "+100",
-        },
-        {
-          game: "Flip Coin",
-          result: "-100",
-        },
-        {
-          game: "Guess Door",
-          result: "-100",
-        },
-        {
-          game: "Guess Door",
-          result: "+100",
-        },
-      ],
+      isAuth: false,
+      deposit: 0,
+      name: "",
+      balance: 0,
+      gameHistory: [],
       flipCoinResult: "",
       randDoorResult: null,
   },
