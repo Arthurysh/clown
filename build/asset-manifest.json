@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/clown/build/static/css/main.56b0491f.css",
+    "main.js": "/clown/build/static/js/main.d63e7f83.js",
+    "static/js/787.c0b548da.chunk.js": "/clown/build/static/js/787.c0b548da.chunk.js",
+    "static/media/login-background.jpeg": "/clown/build/static/media/login-background.be320b8c95183784464d.jpeg",
+    "static/media/guess-number.png": "/clown/build/static/media/guess-number.5d0fccc04ff0eb948813.png",
+    "static/media/logo.png": "/clown/build/static/media/logo.c5370d69763d2837e7b3.png",
+    "static/media/guess-door.jpg": "/clown/build/static/media/guess-door.d785cb2fe81fb4d0b523.jpg",
+    "static/media/flip-coin.jpeg": "/clown/build/static/media/flip-coin.7c762ec162607bbe70c3.jpeg",
+    "static/media/front-coin.svg": "/clown/build/static/media/front-coin.cd5fa5c1240f4c871346d2fa10ea12d8.svg",
+    "static/media/back-coin.svg": "/clown/build/static/media/back-coin.8184bcc2cebdb2554a84e66276523650.svg",
+    "index.html": "/clown/build/index.html",
+    "static/media/door3_dask.svg": "/clown/build/static/media/door3_dask.2a278a087490f09c655b1f08214c5be8.svg",
+    "static/media/door1_dask.svg": "/clown/build/static/media/door1_dask.3058a1528d1623eb3b6cdeb6e652bae6.svg",
+    "static/media/door2_dask.svg": "/clown/build/static/media/door2_dask.5b966279515d9bccd1903dfee4753c68.svg",
+    "static/media/getFetch.cjs": "/clown/build/static/media/getFetch.40f37ddea2378391108f.cjs",
+    "main.56b0491f.css.map": "/clown/build/static/css/main.56b0491f.css.map",
+    "main.d63e7f83.js.map": "/clown/build/static/js/main.d63e7f83.js.map",
+    "787.c0b548da.chunk.js.map": "/clown/build/static/js/787.c0b548da.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.56b0491f.css",
+    "static/js/main.d63e7f83.js"
+  ]
+}

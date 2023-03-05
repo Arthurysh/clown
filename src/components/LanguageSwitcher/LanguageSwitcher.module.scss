@@ -1,0 +1,16 @@
+.lang_select {
+  background: none;
+  border: none;
+  color: #c4c4c4;
+  font-weight: 600;
+  padding: 5px;
+  outline: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.lang_select::after {
+  font-weight: 600;
+}

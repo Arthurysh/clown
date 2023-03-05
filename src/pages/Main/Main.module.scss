@@ -1,0 +1,17 @@
+body{
+    background-color: #131F37;
+    .container{
+        width: 100%;
+        height: calc(100vh - 100px);
+        display: flex;
+        .content_block{
+            overflow: scroll;
+            background: #0e172a;
+            height: 100%;
+            width: 80%;
+            border-radius: 25px 0px 0px 0px;
+            padding: 40px;
+            box-sizing: border-box;
+        }
+    }
+}

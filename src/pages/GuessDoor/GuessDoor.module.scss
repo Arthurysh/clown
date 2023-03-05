@@ -1,0 +1,64 @@
+.container {
+  .guess_door {
+    h3 {
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+      font-size: 21px;
+      color: #c4c4c4;
+      margin-bottom: 40px;
+    }
+    .doors_block {
+      display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 40px;
+      .door_block {
+        cursor: pointer;
+        .border {
+          background: #d5a300;
+          height: 280px;
+          .door {
+            transform-origin: left;
+            transition: all 0.5s ease-in-out;
+          }
+          .door:hover {
+            transform: perspective(1200px) translateZ(0px) translateX(0px)
+              translateY(0px) rotateY(-65deg);
+          }
+        }
+        .border.selected {
+          .door {
+            transform: perspective(1200px) translateZ(0px) translateX(0px)
+              translateY(0px) rotateY(-65deg);
+          }
+        }
+        .border.win {
+          background: rgb(0, 102, 0);
+          .door {
+            transform: perspective(1200px) translateZ(0px) translateX(0px)
+              translateY(0px) rotateY(-65deg);
+          }
+        }
+        .border.loss {
+          background: rgb(151, 0, 0);
+          .door {
+            transform: perspective(1200px) translateZ(0px) translateX(0px)
+              translateY(0px) rotateY(-65deg);
+          }
+        }
+      }
+      .door_block:nth-child(1) .border {
+        border: 10px solid #6c5138;
+      }
+      .door_block:nth-child(2) .border {
+        border: 10px solid #634020;
+      }
+      .door_block:nth-child(3) .border {
+        border: 10px solid #ffc18a;
+      }
+    }
+  }
+  p.desc {
+    max-width: 720px;
+  }
+}

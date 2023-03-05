@@ -1,0 +1,13 @@
+.button_block {
+  display: flex;
+  justify-content: center;
+    button {
+      border: none;
+      color: #C4C4C4;
+      background: #19459B;
+      padding: 15px 60px;
+      border-radius: 20px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  }
