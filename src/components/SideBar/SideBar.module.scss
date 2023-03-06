@@ -16,7 +16,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: calc(100vh - 227px);
+      height: calc(100vh - 247px);
       color: #c4c4c4a6;
       font-size: 16px;
       font-weight: 500;
@@ -49,6 +49,9 @@
       }
       .guess_door {
         color: #9a3405;
+      }
+      .guess_number {
+        color: #fe2361;
       }
     }
   }

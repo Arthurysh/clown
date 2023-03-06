@@ -19,6 +19,8 @@ function SideBar() {
       return gameHistory.filter((item) => item.game === "Flip Coin");
     } else if(selectedGame === "guessDoor"){
       return gameHistory.filter((item) => item.game === "Guess Door");
+    } else if(selectedGame === "guessNumber"){
+      return gameHistory.filter((item) => item.game === "Guess Number");
     }
   }
 
@@ -33,11 +35,9 @@ function SideBar() {
           {filteredGameHistory.map((item, index) => (
             <li key={index}>
               <span
-                className={
-                  item.game === "Flip Coin"
-                    ? classes.flip_coin
-                    : classes.guess_door
-                }
+                className={`${item.game === "Flip Coin" ? classes.flip_coin : ""} 
+                ${item.game === "Guess Door" ? classes.guess_door : ""} 
+                ${item.game === "Guess Number" ? classes.guess_number : ""}`}
               >
                 {selectedGame === "menu" ? item.game + ": " : ""}
               </span>

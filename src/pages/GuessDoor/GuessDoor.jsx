@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Description from "../../components/Description/Description";
 import Title from "../../components/Title/Title";
 import classes from "./GuessDoor.module.scss";
-import { guessDoor } from "../../store/reducers/userSlice";
+import { guessDoor, addBet } from "../../store/reducers/userSlice";
 import { useEffect, useState } from "react";
 import doorOneImg from "../../assets/images/door1_dask.svg";
 import doorTwoImg from "../../assets/images/door2_dask.svg";
@@ -21,6 +21,7 @@ function GuessDoor() {
     if (!isActive) {
       setIsActive(true);
       setSelectedDoor(doorNumber);
+      dispatch(addBet());
       setTimeout(() => {
         dispatch(guessDoor({doorNumber}));
         setSelectDoorActive(selectDoorActive + 1);

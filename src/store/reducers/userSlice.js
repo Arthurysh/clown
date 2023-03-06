@@ -10,6 +10,7 @@ const userSlice = createSlice({
       gameHistory: [],
       flipCoinResult: "",
       randDoorResult: null,
+      randNumberResult: 0,
   },
   reducers: {
     addUser(state, action) {
@@ -26,9 +27,6 @@ const userSlice = createSlice({
       state.balance = 0;
       state.gameHistory = [];
     },
-    updateBalance(state, action) {
-      state.balance = action.payload;
-    },
     flipCoin(state, action) {
       const { options } = action.payload;
       const rand = Math.floor(Math.random() * 2);
@@ -36,8 +34,6 @@ const userSlice = createSlice({
       const bid = (state.deposit * 0.05).toFixed();
       if(options === state.flipCoinResult) {
         state.balance += bid * 2;
-      } else if(options !== state.flipCoinResult){
-        state.balance -= bid;
       }
       state.gameHistory.unshift({
         game: "Flip Coin",
@@ -50,17 +46,31 @@ const userSlice = createSlice({
       const bid = (state.deposit * 0.05).toFixed();
       if(state.randDoorResult === doorNumber){
         state.balance += bid * 3;
-      } else if(state.randDoorResult !== doorNumber){
-        state.balance -= bid;
       }
       state.gameHistory.unshift({
         game: "Guess Door",
         result: doorNumber === state.randDoorResult ? `+${bid * 3}` : `-${bid}`,
       });
+    },
+    guessNumber(state, action) {
+      const { selectedNum } = action.payload;
+      state.randNumberResult = Math.floor(Math.random() * 10) + 1;
+      const bid = (state.deposit * 0.05).toFixed();
+      if(state.randNumberResult === selectedNum){
+        state.balance += bid * 10;
+      } 
+      state.gameHistory.unshift({
+        game: "Guess Number",
+        result: selectedNum === state.randNumberResult ? `+${bid * 10}` : `-${bid}`,
+      });
+    },
+    addBet(state) {
+      const bid = (state.deposit * 0.05).toFixed();
+      state.balance -= bid;
     }
   },
 });
 
-export const { addUser, updateBalance, flipCoin, logOut, guessDoor} = userSlice.actions;
+export const { addUser, flipCoin, logOut, guessDoor, guessNumber, addBet} = userSlice.actions;
 
 export default userSlice.reducer;

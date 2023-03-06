@@ -30,7 +30,7 @@ function MenuGames() {
                 <div className={classes.game_block}>
                     <h3>{t("menuGames.guessNumber")}</h3>
                     <img src={guessNumberImg} alt="guess number image"/>
-                    <Button text={t("menuGames.button")}/>
+                    <Button text={t("menuGames.button")} onClick={() => navigate("/guessNumber")}/>
                 </div>
             </div>
             <Description text={t("menuGames.description")}/>

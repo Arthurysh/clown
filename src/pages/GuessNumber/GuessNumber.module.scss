@@ -1,0 +1,91 @@
+.container {
+  .guess_number {
+    .block_result {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+      .number {
+        font-size: 26px;
+        font-weight: 600;
+        color: #c4c4c4;
+        text-align: center;
+        border-radius: 50%;
+        background: #1a2a4a;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+      }
+      .number.win {
+        border: 4px #008204 solid;
+      }
+      .number.lose {
+        border: 4px #a60000 solid;
+      }
+    }
+    .block_selection {
+      h3 {
+        text-align: center;
+        font-weight: 600;
+        font-size: 21px;
+        color: #c4c4c4;
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+      .numbers {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 500px;
+        margin-bottom: 20px;
+        .number_item {
+          font-size: 26px;
+          font-weight: 600;
+          color: #c4c4c4;
+          text-align: center;
+          border-radius: 50%;
+          background: #1a2a4a;
+          width: 80px;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+          margin: 10px;
+          box-sizing: border-box;
+        }
+        .number_item:hover {
+          border: 4px #ffd700 solid;
+        }
+        .number_item.active {
+          border: 4px #ffd700 solid;
+          animation: blinking 2s infinite;
+        }
+      }
+    }
+  }
+  .desc {
+    max-width: 750px;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    border: 4px #ffd700 solid;
+  }
+  25% {
+    border: 0;
+  }
+  50% {
+    border: 4px #ffd700 solid;
+  }
+  75% {
+    border: 0;
+  }
+  100% {
+    border: 4px #ffd700 solid;
+  }
+}

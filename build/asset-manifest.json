@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/clown/build/static/css/main.56b0491f.css",
-    "main.js": "/clown/build/static/js/main.58fbe3bb.js",
+    "main.css": "/clown/build/static/css/main.98890d81.css",
+    "main.js": "/clown/build/static/js/main.50ff4986.js",
     "static/js/787.c0b548da.chunk.js": "/clown/build/static/js/787.c0b548da.chunk.js",
     "static/media/login-background.jpeg": "/clown/build/static/media/login-background.be320b8c95183784464d.jpeg",
     "static/media/guess-number.png": "/clown/build/static/media/guess-number.5d0fccc04ff0eb948813.png",
@@ -15,12 +15,12 @@
     "static/media/door1_dask.svg": "/clown/build/static/media/door1_dask.3058a1528d1623eb3b6cdeb6e652bae6.svg",
     "static/media/door2_dask.svg": "/clown/build/static/media/door2_dask.5b966279515d9bccd1903dfee4753c68.svg",
     "static/media/getFetch.cjs": "/clown/build/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.56b0491f.css.map": "/clown/build/static/css/main.56b0491f.css.map",
-    "main.58fbe3bb.js.map": "/clown/build/static/js/main.58fbe3bb.js.map",
+    "main.98890d81.css.map": "/clown/build/static/css/main.98890d81.css.map",
+    "main.50ff4986.js.map": "/clown/build/static/js/main.50ff4986.js.map",
     "787.c0b548da.chunk.js.map": "/clown/build/static/js/787.c0b548da.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.56b0491f.css",
-    "static/js/main.58fbe3bb.js"
+    "static/css/main.98890d81.css",
+    "static/js/main.50ff4986.js"
   ]
 }

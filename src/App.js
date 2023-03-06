@@ -6,6 +6,7 @@ import MenuGames from "./pages/MenuGames/MenuGames";
 import FlipCoin from "./pages/FlipСoin/FlipCoin";
 import GuessDoor from "./pages/GuessDoor/GuessDoor";
 import FinalWindow from "./pages/FinalWindow/FinalWindow";
+import GuessNumber from "./pages/GuessNumber/GuessNumber";
 
 function App() {
   const { isAuth, balance, deposit } = useSelector((state) => state.user);
@@ -16,10 +17,11 @@ function App() {
         {(isAuth) ? 
         <Routes>
           <Route path="*" element={<Navigate to="/menu" />} />
-          <Route path="/" element={(balance <= deposit * 0.05 || balance > deposit * 2) ? <FinalWindow /> : <Main />}>
+          <Route path="/" element={(balance < deposit * 0.05 || balance >= deposit * 2) ? <FinalWindow /> : <Main />}>
             <Route path="menu" element={ <MenuGames /> }/>
             <Route path="flipCoin" element={ <FlipCoin /> }/>
             <Route path="guessDoor" element={ <GuessDoor /> }/>
+            <Route path="guessNumber" element={<GuessNumber />} />
           </Route>
         </Routes> : 
         <Routes>

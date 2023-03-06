@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import classes from "./FlipCoin.module.scss";
 import Title from "../../components/Title/Title";
 import { useDispatch, useSelector } from "react-redux";
-import { flipCoin } from "../../store/reducers/userSlice";
+import { flipCoin, addBet } from "../../store/reducers/userSlice";
 import headsCoinImg from "../../assets/images/front-coin.svg";
 import tailsCoinImg from "../../assets/images/back-coin.svg";
 import Description from "../../components/Description/Description";
@@ -24,6 +24,7 @@ function FlipCoin() {
        setChosenSide(options);
        setResultClass("");
        setIsFlipping(true);
+       dispatch(addBet());
        setTimeout(() => { 
           setIsFlipping(false);
           setTimeout(() => {

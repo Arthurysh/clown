@@ -16,7 +16,7 @@ function FinalWindow() {
     useEffect(() => {
         if(balance < deposit * 0.05){
             setDescriptionText(`${name}${t("finalWindow.lossOne")} ${deposit}${t("finalWindow.lossTwo")}`)
-        } else if(balance > deposit * 2) {
+        } else if(balance >= deposit * 2) {
             setDescriptionText(`${t("finalWindow.winOne")} ${name}${t("finalWindow.winTwo")} ${deposit} ${t("finalWindow.winThree")} ${balance}`)
         }
     })
