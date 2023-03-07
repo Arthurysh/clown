@@ -10,8 +10,8 @@ function LanguageSwitcher(props) {
       name="language"
       onChange={(e) => i18n.changeLanguage(e.target.value.toLowerCase())}
       value={localStorage.getItem("i18nextLng").toUpperCase()}>
-      <option value="EN">EN</option>
       <option value="UA">UA</option>
+      <option value="EN">EN</option>
     </select>
   );
 }
