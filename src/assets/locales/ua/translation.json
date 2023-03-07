@@ -2,7 +2,9 @@
     "logIn": {
         "nameEmpty": "Поле імені не може бути порожнім",
         "depositEmpty": "Депозит не може бути порожнім",
-        "depositError": "Ваш депозит має бути більше 100",
+        "depositMinError": "Ваш депозит має бути більше ста",
+        "depositMaxError": "Ваш депозит має бути менше мільярда",
+        "depositFractionError": "Ваш депозит має бути цілим числом",
         "nameError": "Назва має містити не менше 2 символів",
         "placeholderName": "Введіть ім'я...",
         "placeholderDeposit": "Введіть депозит...",

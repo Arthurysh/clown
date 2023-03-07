@@ -33,14 +33,14 @@
           }
         }
         .border.win {
-          background: rgb(0, 102, 0);
+          background: #006600;
           .door {
             transform: perspective(1200px) translateZ(0px) translateX(0px)
               translateY(0px) rotateY(-65deg);
           }
         }
         .border.loss {
-          background: rgb(151, 0, 0);
+          background: #970000;
           .door {
             transform: perspective(1200px) translateZ(0px) translateX(0px)
               translateY(0px) rotateY(-65deg);

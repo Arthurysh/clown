@@ -34,10 +34,14 @@ function LogIn() {
     const deposit = event.target.value;
     setDeposit(deposit);
     if (deposit < 100) {
-      setDepositError(t("logIn.depositError"));
+      setDepositError(t("logIn.depositMinError"));
       if (!deposit) {
-        setNameError(t("logIn.depositEmpty"));
+        setDepositError(t("logIn.depositEmpty"));
       }
+    } else if(!/^\d+$/.test(deposit)) {
+      setDepositError(t("logIn.depositFractionError"));
+    }  else if (deposit > 1000000000) {
+      setDepositError(t("logIn.depositMaxError"));
     } else {
       setDepositError("");
     }

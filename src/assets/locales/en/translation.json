@@ -2,7 +2,9 @@
     "logIn": {
         "nameEmpty": "The name field cannot be empty",
         "depositEmpty": "The deposit cannot be empty",
-        "depositError": "Your deposit must be more than 100",
+        "depositMinError": "Your deposit must be more than a hundred",
+        "depositMaxError": "Your deposit must be less than a billion",
+        "depositFractionError": "Your deposit must be an integer",
         "nameError": "The name must contain at 2 characters",
         "placeholderName": "Enter your name...",
         "placeholderDeposit": "Enter your deposit...",

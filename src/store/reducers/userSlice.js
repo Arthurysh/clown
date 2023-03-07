@@ -3,11 +3,35 @@ import { createSlice } from '@reduxjs/toolkit';
 const userSlice = createSlice({
   name: 'user',
   initialState: {
-      isAuth: false,
-      deposit: 0,
-      name: "",
-      balance: 0,
-      gameHistory: [],
+      isAuth: true,
+      deposit: 200,
+      name: "Arrtur",
+      balance: 100,
+      gameHistory: [
+        {
+            game: "Flip Coin",
+            result: "-100",
+          },
+          {
+            game: "Guess Door",
+            result: "-100",
+          },
+          {
+            game: "Flip Coin",
+            result: "+100",
+          },
+          {
+            game: "Flip Coin",
+            result: "-100",
+          },
+          {
+            game: "Guess Door",
+            result: "-100",
+          },
+          {
+            game: "Guess Door",
+            result: "+100",
+          },],
       flipCoinResult: "",
       randDoorResult: null,
       randNumberResult: 0,
@@ -37,7 +61,7 @@ const userSlice = createSlice({
       }
       state.gameHistory.unshift({
         game: "Flip Coin",
-        result: options === state.flipCoinResult ? `+${bid * 2}` : `-${bid}`,
+        result: options === state.flipCoinResult ? `+${bid}` : `-${bid}`,
       });
     },
     guessDoor(state, action) {
@@ -49,7 +73,7 @@ const userSlice = createSlice({
       }
       state.gameHistory.unshift({
         game: "Guess Door",
-        result: doorNumber === state.randDoorResult ? `+${bid * 3}` : `-${bid}`,
+        result: doorNumber === state.randDoorResult ? `+${bid * 2}` : `-${bid}`,
       });
     },
     guessNumber(state, action) {
@@ -61,7 +85,7 @@ const userSlice = createSlice({
       } 
       state.gameHistory.unshift({
         game: "Guess Number",
-        result: selectedNum === state.randNumberResult ? `+${bid * 10}` : `-${bid}`,
+        result: selectedNum === state.randNumberResult ? `+${bid * 9}` : `-${bid}`,
       });
     },
     addBet(state) {
